@@ -1,21 +1,73 @@
 :root {
 	--link-color: #fff;
+	--link-color-hover: #ff6c00;
+	--social-link-color: #000;
+	--heading-font-family: "Raleway", sans-serif;
+	--text-font-family: "Open Sans", sans-serif;
+}
+
+* {
+	font-family: var(--text-font-family);
 }
 
 .global-header {
-	background: #3b88c7;
+	background: #191c2633;
 }
 
 .global-header .main-nav a,
 .global-header .main-nav a:visited {
 	color: var(--link-color);
-	text-decoration: none;
+	font-weight: 600;
 }
 
-.global-header .main-nav li {
+ul {
 	list-style-type: none;
 }
 
-.global-header .main-nav a.active {
-	color: red;
+.global-header .main-nav a:hover {
+	color: var(--link-color-hover);
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+.social-section a,
+.social-section a:visited {
+	color: var(--social-link-color);
+	font-weight: 600;
+}
+
+.global-header .contact,
+.global-header .contact:visited {
+	color: var(--link-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--heading-font-family);
+	font-weight: 700;
+}
+
+.hero-section .hero-title {
+	color: var(--link-color);
+}
+
+.hero-section {
+	background-color: gray;
+}
+
+.button-service {
+	background: transparent;
+	text-transform: uppercase;
+	border-radius: 25px;
+	border: 1px solid var(--link-color-hover);
+	color: var(--link-color);
+	line-height: 16.34px;
+	padding: 12px;
 }
